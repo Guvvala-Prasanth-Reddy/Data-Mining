@@ -1,3 +1,7 @@
 data/*
 Plots/*
 past_data/*
+*.pyc
+*.pdf
+Old_Plots/*
+tokens.py

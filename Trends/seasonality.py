@@ -36,6 +36,8 @@ def find_the_seasonality_on_column(df: pd.DataFrame, column: str, ticker: str, t
     plt.suptitle(f'Seasonal Decomposition of {ticker} ({column}) Time Series', fontsize=16)
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # Adjust layout to make space for the main title
     plt.savefig(f'{figure_directory}/{ticker}_seasonal_decomposition_{column}.png')
+    plt.close()
+    return decomposition
 
 # Example usage:
 # df is your DataFrame with DateTimeIndex and relevant columns, e.g., 'Close' or 'Volume'
