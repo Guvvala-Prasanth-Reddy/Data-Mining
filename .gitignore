@@ -5,3 +5,4 @@ past_data/*
 *.pdf
 Old_Plots/*
 tokens.py
+api_key.py
