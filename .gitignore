@@ -1,5 +1,6 @@
 data/*
 Plots/*
+vnv/*
 past_data/*
 *.pyc
 *.pdf

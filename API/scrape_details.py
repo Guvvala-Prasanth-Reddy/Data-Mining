@@ -8,7 +8,7 @@ def scrape_url( url ):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     session = requests.Session()
-    retry = Retry(connect=3, backoff_factor=0.5)
+    retry = Retry(connect=1, backoff_factor=0.5)
     adapter = HTTPAdapter(max_retries=retry)
     session.mount('http://', adapter)
     session.mount('https://', adapter)
