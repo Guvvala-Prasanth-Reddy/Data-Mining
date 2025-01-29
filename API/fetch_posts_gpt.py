@@ -1,6 +1,6 @@
 from openai import OpenAI # type: ignore
 import os
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 client = OpenAI()
 
 
